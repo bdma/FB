@@ -78,7 +78,7 @@ export default {
   padding: 0 .6rem .4rem; 
   margin-bottom: .5rem;
   box-shadow: 0 0.2rem 0.2rem -0.1rem #ced6c9;
-  // display: none;
+  display: none;
   .baby_img{
     width: 30%;
     img{
