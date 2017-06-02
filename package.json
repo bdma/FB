@@ -4,6 +4,9 @@
   "description": "feedback of baby care",
   "author": "mario <qinghe0101@gmail.com>",
   "private": true,
+  "engines": {
+    "node": ">=7.10.0"
+  },
   "dependencies": {
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
