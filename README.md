@@ -1,6 +1,6 @@
 # fb
 
-> Nuxt.js project
+> feedback of baby care
 
 ## Build Setup
 
