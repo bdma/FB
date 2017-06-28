@@ -25,7 +25,7 @@
     <div class="cell_wrap" v-for = "section in sections">
       <div class="cell title">{{section.sectionName}}</div>
       <!--v-if="item.type === 'radio'"-->
-      <div class="cell" v-for="item in section.items" >
+      <div class="cell" v-for="item in section.items">
         <div class="inblock left">{{item.itemName}}</div>
         <div class="inblock right">
           <div v-if="item.type === 'radio'" v-bind:class="{activity: index === 0}" v-for="(option, index) in item.options" class="inblock select">{{option}}</div>
@@ -38,6 +38,8 @@
           </div>
         </div>
       </div>
+      <!--<input type="text" class="input biginput"  v-if="section.type == 'input'">-->
+      <textarea  class="input biginput"   v-if="section.type == 'input'"></textarea>
       
     </div>
   </section>
@@ -148,6 +150,16 @@ export default {
   .left {
     width: 40%;
   }
+  .input{
+    padding: .2rem .5rem;
+    border:.01rem solid #ececec;
+  }
+  .biginput{
+    margin:.5rem 0;
+    width:100%;
+    min-height: 8rem;
+    font-size: 1rem;
+  }
   .right {
     width: 60%;
     text-align: right;
@@ -164,10 +176,7 @@ export default {
       color: #00B140;
       border-color: #10ff10;
     }
-    .input{
-      padding: .2rem .5rem;
-      border:.01rem solid #ececec;
-    }
+   
     .mininput{
       display: inline-block;
       width: 2rem;
