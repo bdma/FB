@@ -8,10 +8,11 @@
     "node": "^8.0.0"
   },
   "dependencies": {
+    "axios": "^0.16.2",
+    "css-loader": "^0.28.4",
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
     "nuxt": "latest",
-    "css-loader": "^0.28.4",
     "vue-style-loader": "^3.0.1"
   },
   "scripts": {
